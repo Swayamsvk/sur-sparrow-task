@@ -1,0 +1,410 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  cursor: pointer;
+  height: 9vh;
+}
+
+.nav-button {
+  position: relative;
+  text-align: center;
+  width: 100px;
+  padding: 10px;
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  color: black;
+  font-weight: 600;
+  background-color: white;
+  cursor: pointer;
+  border-radius: 100px;
+}
+
+.rightNav {
+  width: 85%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.rightNav li {
+  list-style: none;
+  padding: 26px 30px;
+}
+
+.rightNav li a {
+  text-decoration: none;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.rightNav li a:hover {
+  color: green;
+}
+
+.nav-list {
+  width: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.background {
+  background: rgba(255, 255, 255, 0) url("../img/Bitmap.png");
+  background-size: cover;
+  background-blend-mode: darken;
+}
+
+.firstSection {
+  height: 100vh;
+}
+
+.box-main-sec-one {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  max-width: 70%;
+  margin: auto;
+  height: 80%;
+}
+
+.firstHalf-sec-one {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.secondHalf-sec-one {
+  width: 70%;
+}
+
+.text-big-sec-one {
+  font-family: "Poppins", sans-serif;
+  font-size: 90px;
+  font-weight: 700;
+}
+
+.box-main-sec-two {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  max-width: 80%;
+  margin: auto;
+  height: 60%;
+}
+
+.firstHalf-sec-two {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.secondHalf-sec-two {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 50%;
+}
+
+.text-big-sec-two {
+  font-size: 50px;
+  text-align: right;
+}
+
+.text-color-sec-two {
+  color: #6174b9;
+}
+
+.secondSection {
+  height: 100vh;
+}
+
+.timeline {
+  background: var(--primary-color);
+  margin: 20px auto;
+  padding: 20px;
+}
+
+/* Outer Layer with the timeline border */
+.outer {
+  border-left: 2px solid #4c5aa1;
+}
+
+/* Card container */
+.card {
+  position: relative;
+  margin: 0 0 20px 20px;
+  padding: 10px;
+  color: gray;
+  border-radius: 8px;
+  max-width: 400px;
+}
+
+/* Information about the timeline */
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Title of the card */
+.title {
+  color: #6174b9;
+  position: relative;
+  font-size: 16px;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Timeline dot  */
+.title::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: #4c5aa1;
+  border-radius: 999px;
+  left: -36px;
+}
+
+.box-sub-sec-two {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  max-width: 30%;
+  margin: auto;
+}
+
+.text-big-sub-sec-two {
+  font-size: 48px;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+}
+
+.text-color-sub-sec-two {
+  color: #444c58;
+}
+
+.text-small-sub-sec-two {
+  font-size: 18px;
+  font-weight: 300;
+  font-family: "Poppins", sans-serif;
+}
+
+.box-sub-sec-three {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  max-width: 90%;
+  margin: auto;
+  height: 40%;
+}
+
+.firstHalf-sub-sec-three {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.secondHalf-sub-sec-three {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.thirdHalf-sub-sec-three {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.div-sub-sec-three {
+  width: 10%;
+  display: flex;
+  justify-content: center;
+}
+
+.divider-sub-sec-three {
+  height: 200px;
+  width: 2px;
+  background-color: #d3d3d3;
+  display: inline-block;
+}
+
+.thirdSection {
+  height: 100vh;
+}
+
+.box-main-sec3 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  max-width: 60%;
+  margin: auto;
+  height: 80%;
+}
+
+.firstHalf-sec3 {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.secondHalf-sec3 {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 50%;
+}
+
+.photoCard1 {
+  width: 200px;
+  height: 270px;
+  display: inline-block;
+  box-sizing: border-box;
+  cursor: pointer;
+  background-position: center;
+  background-size: cover;
+}
+.photoCard2 {
+  width: 200px;
+  height: 230px;
+  display: inline-block;
+  box-sizing: border-box;
+  cursor: pointer;
+  background-position: center;
+  background-size: cover;
+}
+.photoCard3 {
+  width: 200px;
+  height: 220px;
+  display: inline-block;
+  box-sizing: border-box;
+  cursor: pointer;
+  background-position: center;
+  background-size: cover;
+}
+.photoCard4 {
+  width: 200px;
+  height: 180px;
+  display: inline-block;
+  box-sizing: border-box;
+  cursor: pointer;
+  background-position: center;
+  background-size: cover;
+}
+.photoCardImage1 {
+  background-image: url(../img/Rocking.png);
+}
+.photoCardImage2 {
+  background-image: url(../img/Sports.png);
+}
+.photoCardImage3 {
+  background-image: url(../img/Sad.png);
+}
+.photoCardImage4 {
+  background-image: url(../img/Exercise.png);
+}
+
+.photoRow {
+  display: flex;
+  height: 88%;
+  align-items: center;
+  width: 55%;
+}
+
+.photoColumn {
+  margin-left: 1%;
+}
+
+.fourthSection {
+  height: 100vh;
+  background-image: url(../img/emuse.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.fifthSection {
+  height: 200vh;
+}
+
+.box-main-sec4 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  max-width: 80%;
+  margin: auto;
+  height: 60%;
+}
+
+.secRight {
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  max-width: 80%;
+  margin: auto;
+}
+
+.paras {
+  padding: 0px 65px;
+}
+
+.box-main-sec5 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  max-width: 80%;
+  margin: auto;
+  height: 60%;
+}
+
+.firstHalf-sec5 {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.secondHalf-sec5 {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
