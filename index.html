@@ -31,7 +31,7 @@
       <li><a href="#usecases">Use Cases</a></li>
       <li><a href="#pricing">Pricing</a></li>
       <li>
-        <div class="nav-button">SignUp</div>
+        <button class="nav-button">SignUp</button>
       </li>
     </ul>
 
@@ -215,6 +215,41 @@
     </div>
   </footer>
 
+  <div class="box">
+    <form class="loginForm">
+      <div class="body">
+        <div class="title">
+          <h3>Menmer Login</h3>
+        </div>
+
+        <div class="inputs">
+          <div class="input">
+            <input type="text" placeholder="Username">
+          </div>
+          <div class="input">
+            <input type="password" placeholder="Password">
+          </div>
+          <input type="submit" class="loginBtn" value="Login">
+        </div>
+      </div>
+      <div class="footer">
+        <input type="button" class="cancelBtn" value="Cancel">
+      </div>
+    </form>
+  </div>
+  <script type="text/javascript">
+    const signupLink = document.querySelector(".nav-button");
+    const box = document.querySelector(".box");
+    const cancelBtn = document.querySelector(".cancelBtn");
+
+    signupLink.addEventListener("click", () => {
+      box.style.display = "flex";
+
+    })
+    cancelBtn.addEventListener("click", () => {
+      box.style.display = "none";
+    });
+  </script>
 </body>
 
 </html>
