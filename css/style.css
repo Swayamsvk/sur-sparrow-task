@@ -55,7 +55,7 @@
 }
 
 .rightNav li a:hover {
-  color: green;
+  color: #6174b9;
 }
 
 .nav-list {
@@ -209,6 +209,7 @@
   font-size: 18px;
   font-weight: 300;
   font-family: "Poppins", sans-serif;
+  margin-top: 4%;
 }
 
 .secondSection .box-sub-two {
@@ -252,6 +253,7 @@
   font-size: 18px;
   font-weight: 300;
   font-family: "Poppins", sans-serif;
+  margin-top: 4%;
 }
 
 .divc-sub-two-common {
@@ -424,6 +426,7 @@
   font-size: 16px;
   font-weight: 300;
   font-family: "Inter", sans-serif;
+  margin-top: 5%;
 }
 
 footer {
@@ -487,7 +490,6 @@ footer {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  align-items: center;
   width: 50%;
 }
 
@@ -588,4 +590,11 @@ footer {
   font-size: 16px;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
+}
+.signup-box .form .body .warning {
+  width: 412px;
+  font-size: 12px;
+  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+  margin-top: 2%;
 }
