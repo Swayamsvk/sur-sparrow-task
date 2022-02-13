@@ -215,32 +215,29 @@
     </div>
   </footer>
 
-  <div class="box">
-    <form class="loginForm">
+  <div class="signup-box">
+    <form class="form">
       <div class="body">
         <div class="title">
-          <h3>Menmer Login</h3>
+          <h3>Sign Up</h3>
+          <h4 class="close" href="#" style="cursor: pointer;">Close</h6>
         </div>
-
-        <div class="inputs">
-          <div class="input">
-            <input type="text" placeholder="Username">
-          </div>
-          <div class="input">
-            <input type="password" placeholder="Password">
-          </div>
-          <input type="submit" class="loginBtn" value="Login">
-        </div>
-      </div>
-      <div class="footer">
-        <input type="button" class="cancelBtn" value="Cancel">
+        <label>Full Name</label>
+        <input class="input" type="text" placeholder="First and Last Name">
+        <label>Email Address</label>
+        <input class="input" type="text" placeholder="username@email.com">
+        <label>Password</label>
+        <input class="input" type="password" placeholder="Password">
+        <label>Confirm Password</label>
+        <input class="input" type="password" placeholder="Re-enter password">
+        <input class="signup-button" type="button" value="Sign Up">
       </div>
     </form>
   </div>
   <script type="text/javascript">
     const signupLink = document.querySelector(".nav-button");
-    const box = document.querySelector(".box");
-    const cancelBtn = document.querySelector(".cancelBtn");
+    const box = document.querySelector(".signup-box");
+    const cancelBtn = document.querySelector(".close");
 
     signupLink.addEventListener("click", () => {
       box.style.display = "flex";
