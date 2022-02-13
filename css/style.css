@@ -32,6 +32,7 @@
   cursor: pointer;
   border-radius: 100px;
   border-color: #525355;
+  font-family: "Montserrat", sans-serif;
 }
 
 .rightNav {
@@ -69,6 +70,25 @@
   background: rgba(255, 255, 255, 0) url("../img/Bitmap.png");
   background-size: cover;
   background-blend-mode: darken;
+}
+
+.floating-btn {
+  width: 77px;
+  height: 78.03px;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  border-radius: 50%;
+  color: #6174b9;
+  font-size: 25px;
+  box-shadow: 0px 5px 13px rgba(0, 0, 0, 0.17397);
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  font-weight: 700;
+  cursor: pointer;
 }
 
 .firstSection {
@@ -563,7 +583,7 @@ footer {
 .signup-box .form .body label {
   display: flex;
   margin-top: 20px;
-  font-size: 16px;
+  font-size: 12px;
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
 }
@@ -597,4 +617,129 @@ footer {
   font-weight: 400;
   font-family: "Montserrat", sans-serif;
   margin-top: 2%;
+}
+
+.message-box {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(160, 160, 160, 0.4);
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.message-box .form {
+  width: 577px;
+  height: 450px;
+  background-color: #ffffff;
+  border: 1px solid #bfbfbf;
+  border-radius: 6px;
+  overflow: hidden;
+  margin-right: 5%;
+  margin-bottom: 5%;
+}
+
+.message-box .form .body {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 4%;
+}
+
+.message-box .form .body .title {
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  flex-direction: row;
+  padding: 14%;
+  color: #ffffff;
+  background-color: #7f8ac5;
+  border-radius: 6px;
+}
+
+.message-box .form .body .title .cancel-message {
+  margin-top: -15%;
+  margin-right: -10%;
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+}
+
+.message-box .form .body .title .main {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.message-box .form .body .title .main h1 {
+  font-size: 23px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+
+.message-box .form .body .title .main h3 {
+  font-size: 12px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+
+.message-box .form .body .message {
+  background-color: #4c5aa1;
+  padding: 10px;
+  color: white;
+  width: fit-content;
+  border-radius: 6px;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  font-size: 12px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+.message-box .form .body .user-message {
+  margin-left: auto;
+  background-color: #9296ac;
+  color: white;
+  border-radius: 6px;
+  font-size: 12px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+
+.message-box .form .body .send-text {
+  display: flex;
+}
+
+.message-box .form .body .send-text .input {
+  flex: 1;
+  height: 40px;
+  outline: 2px;
+  padding-left: 5px;
+  font-size: 16px;
+  border-color: #dad8d8;
+  border-width: 1px;
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+
+.message-box .form .body .send-text .button {
+  width: 100px;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: dodgerblue;
+  color: white;
+  cursor: pointer;
+}
+
+.message-box .form .body .title .cancel-message {
+  font-weight: 700;
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  color: #000000;
 }

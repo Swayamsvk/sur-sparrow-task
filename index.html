@@ -12,7 +12,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap" rel="stylesheet">
@@ -38,6 +38,7 @@
 
   </nav>
 
+  <a class="floating-btn">m.</a>
   <section class="background firstSection">
     <div class="box-main">
       <div class="firstHalf">
@@ -240,10 +241,34 @@
       </div>
     </form>
   </div>
+  <div class="message-box">
+    <form class="form">
+      <div class="body">
+        <div class="title">
+          <div class="main">
+            <h1>Hi There</h3>
+              <h3>The team typically replies in a few minuts.</h3>
+          </div>
+          <h4 class="cancel-message" href="#" style="cursor: pointer;">Close</h6>
+        </div>
+
+        <p class="message">Is there any offline versions available for Maxeon Player?</p>
+        <p class="message user-message">Currently we don’t have but we will launch soon.</p>
+
+        <div class="send-text">
+          <input type="text" class="input" placeholder="Write a reply…">
+          <button class="button">SEND</button>
+        </div>
+      </div>
+    </form>
+  </div>
   <script type="text/javascript">
     const signupLink = document.querySelector(".nav-button");
     const box = document.querySelector(".signup-box");
     const cancelBtn = document.querySelector(".close");
+    const message = document.querySelector(".floating-btn");
+    const message_box = document.querySelector(".message-box");
+    const cancel_message = document.querySelector(".cancel-message");
 
     signupLink.addEventListener("click", () => {
       box.style.display = "flex";
@@ -251,6 +276,14 @@
     })
     cancelBtn.addEventListener("click", () => {
       box.style.display = "none";
+    });
+
+    message.addEventListener("click", () => {
+      message_box.style.display = "flex";
+
+    })
+    cancel_message.addEventListener("click", () => {
+      message_box.style.display = "none";
     });
   </script>
 </body>
