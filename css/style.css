@@ -74,7 +74,7 @@
   height: 100vh;
 }
 
-.box-main-sec-one {
+.firstSection .box-main {
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -84,24 +84,24 @@
   height: 80%;
 }
 
-.firstHalf-sec-one {
+.firstSection .box-main .firstHalf {
   width: 30%;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.secondHalf-sec-one {
-  width: 70%;
-}
-
-.text-big-sec-one {
+.firstSection .box-main .firstHalf .text-big {
   font-family: "Poppins", sans-serif;
   font-size: 90px;
   font-weight: 700;
 }
 
-.box-main-sec-two {
+.secondSection {
+  height: 100vh;
+}
+
+.secondSection .box-main {
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -111,48 +111,44 @@
   height: 60%;
 }
 
-.firstHalf-sec-two {
+.secondSection .box-main .firstHalf {
   width: 50%;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.secondHalf-sec-two {
+.secondSection .box-main .secondHalf {
   display: flex;
   justify-content: flex-end;
   align-items: center;
   width: 50%;
 }
 
-.text-big-sec-two {
+.secondSection .box-main .firstHalf .text-big {
   font-family: "Poppins", sans-serif;
   font-size: 50px;
   text-align: right;
   font-weight: 700;
 }
 
-.text-color-sec-two {
+.secondSection .box-main .firstHalf .text-color {
   color: #6174b9;
 }
 
-.secondSection {
-  height: 100vh;
-}
-
-.timeline {
+.secondSection .box-main .secondHalf .timeline {
   background: var(--primary-color);
   margin: 20px auto;
   padding: 20px;
 }
 
 /* Outer Layer with the timeline border */
-.outer {
+.secondSection .box-main .secondHalf .outer {
   border-left: 2px solid #4c5aa1;
 }
 
 /* Card container */
-.card {
+.secondSection .box-main .secondHalf .card {
   position: relative;
   margin: 0 0 20px 20px;
   padding: 10px;
@@ -162,14 +158,14 @@
 }
 
 /* Information about the timeline */
-.info {
+.secondSection .box-main .secondHalf .info {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
 
 /* Title of the card */
-.title {
+.secondSection .box-main .secondHalf .title {
   color: #6174b9;
   position: relative;
   font-size: 16px;
@@ -178,7 +174,7 @@
 }
 
 /* Timeline dot  */
-.title::before {
+.secondSection .box-main .secondHalf .title::before {
   content: "";
   position: absolute;
   width: 10px;
@@ -188,7 +184,7 @@
   left: -36px;
 }
 
-.box-sub-sec-two-one {
+.secondSection .box-sub-one {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -198,23 +194,23 @@
   margin: auto;
 }
 
-.text-big-sub-sec-two-one {
+.secondSection .box-sub-one .text-big {
   font-size: 48px;
   font-weight: 700;
   font-family: "Poppins", sans-serif;
 }
 
-.text-color-sub-sec-two-one {
+.secondSection .box-sub-one .text-color {
   color: #444c58;
 }
 
-.text-small-sub-sec-two-one {
+.secondSection .box-sub-one .text-small {
   font-size: 18px;
   font-weight: 300;
   font-family: "Poppins", sans-serif;
 }
 
-.box-sub-sec-two-two {
+.secondSection .box-sub-two {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -224,50 +220,54 @@
   height: 40%;
 }
 
-.firstHalf-sub-sec-two-two {
+.secondSection .box-sub-two .firstHalf {
   width: 20%;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.secondHalf-sub-sec-two-two {
+.secondSection .box-sub-two .secondHalf {
   width: 20%;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.thirdHalf-sub-sec-two-two {
+.secondSection .box-sub-two .thirdHalf {
   width: 20%;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.text-big-sub-sec-two-two {
+.text-big-commonHalf {
   font-size: 28px;
   font-weight: 600;
   font-family: "Poppins", sans-serif;
 }
 
-.text-small-sub-sec-two-two {
+.text-small-commonHalf {
   font-size: 18px;
   font-weight: 300;
   font-family: "Poppins", sans-serif;
 }
 
-.div-sub-sec-two-two {
+.divc-commonHalf {
   width: 10%;
   display: flex;
   justify-content: center;
 }
 
-.divider-sub-sec-two-two {
+.divider-commonHalf {
   height: 200px;
   width: 2px;
   background-color: #d3d3d3;
   display: inline-block;
+}
+
+.text-color-commonHalf {
+  color: #444c58;
 }
 
 .thirdSection {
